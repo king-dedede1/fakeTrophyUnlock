@@ -45,8 +45,8 @@ p 8d3e5c 0
 
 # make the zip file, this is probably not the best way to do it
 
-cd $outDir
-rm -f ../$name.zip
-zip -r ../$name.zip *
+cd out/
+rm -f $name.zip
+zip -r $name.zip $name/
 
 echo "Done building."
